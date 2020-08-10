@@ -1,3 +1,71 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+span {
+    margin: 0;
+    display: block;
+}
+
+
+#container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.top_header {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lang_wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.lang_wrap a {
+    display: block;
+}
+
+.lang_wrap p {
+    display: block;
+}
+
+.info_wrap ul li {
+    display: block;
+}
+
+.info_wrap ul {
+    display: flex;
+    flex-direction: row;
+}
+
 .sale_product_wrap {
     background-color: brown;
 }
