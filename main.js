@@ -44,6 +44,20 @@ function Slider (nameId, url, className) {
         this.photoFetch(this.url);
     }.bind(this);
     this.nextBtn.onclick = this.next;
+
+    this.promoNavigation = function () {
+        this.span = document.createElement('span');
+        this.div.appendChild(this.span);
+        this.span.onclick = this.next;
+    }.bind(this);
+    this.promoNavigation()
+    this.promoNavigation()
+    this.promoNavigation()
+
+    this.isActive = function () {
+        this.span.className = 'isActive';
+    }.bind(this);
+    this.span.onclick = this.isActive;
 }
 
 new Slider ('#slider', sliderUrl, mainSlider);
