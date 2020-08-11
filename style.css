@@ -424,7 +424,7 @@ button, button:active, button:focus {
     flex-direction: row;
     max-width: 1000px;
     height: 50px;
-    margin: 0 auto;
+    margin: 10px auto 0;
     background-color: #4db1cb;
 }
 
@@ -449,4 +449,64 @@ button, button:active, button:focus {
     font-size: 14px;
     color: #d6ecf1;
     font-weight: bold;
+}
+
+.footer_middle_wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto ;
+    background-color: #3aa0b9;
+}
+
+.footer_middle_wrap div {
+    width: 20%;
+    position: relative;
+    text-align: start;
+    align-items: center;
+}
+
+.footer_middle_wrap h1 {
+    display: block;
+    width: 150px;
+    color: #c6dee6;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 20px 0; 
+}
+
+.footer_middle_wrap ul li {
+    display: block;
+    width: 100%;
+    color: #c6dee6;
+    list-style: !important;
+}
+
+.footer_middle_wrap p {
+    display: block;
+    width: 180px;
+    padding: 5px 0;
+    color: #c6dee6;
+    text-align: left;
+}
+
+.footer_middle_wrap a {
+    display: block;
+    color: #c6dee6;
+}
+
+.social_media_wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.social_media_wrap img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.fb-page.fb_iframe_widget {
+    align-items: flex-start;
 }
