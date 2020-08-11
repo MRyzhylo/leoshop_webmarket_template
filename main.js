@@ -22,6 +22,9 @@ function Slider (nameId, url, className) {
     this.nextBtn = document.createElement('button');
     this.prevBtn.innerHTML = '&#60;';
     this.nextBtn.innerHTML = '&#62;';
+    this.h1 = document.createElement('h1');
+    this.h1.innerHTML = 'Feautured goods';
+    this.div.appendChild(this.h1);
     this.div.appendChild(this.img);
     this.div.appendChild(this.prevBtn);
     this.div.appendChild(this.nextBtn);
@@ -47,17 +50,15 @@ function Slider (nameId, url, className) {
 
     this.promoNavigation = function () {
         this.span = document.createElement('span');
-        this.div.appendChild(this.span);
+        this.div1 = document.createElement('div');
+        this.div1.appendChild(this.span);
+        this.div.appendChild(this.div1);
         this.span.onclick = this.next;
     }.bind(this);
     this.promoNavigation()
     this.promoNavigation()
     this.promoNavigation()
-
-    this.isActive = function () {
-        this.span.className = 'isActive';
-    }.bind(this);
-    this.span.onclick = this.isActive;
+    
 }
 
 new Slider ('#slider', sliderUrl, mainSlider);
@@ -74,8 +75,11 @@ function Product (nameId, url, className) {
     this.photoFetch = function (url) {
         fetch(url)
         .then(response => response.json())
-        .then(json => json.map(img => `<img src="${img.urls.small}">`))
-        .then(result => this.div.innerHTML = result)
+        .then(json => json.map(img => `<div class="product_card"> 
+        <img class="product_pic" src="${img.urls.small}"> 
+        <p>Goods description</p> <h1> $30.00 </h1> 
+        <img class="cart_pic" src="https://img.icons8.com/nolan/64/add-basket.png"/> </div>`))
+        .then(result => this.div.innerHTML = result.join(' '))
     }.bind(this);
     this.photoFetch(this.url);
 }
