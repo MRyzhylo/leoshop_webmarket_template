@@ -468,7 +468,7 @@ button, button:active, button:focus {
 
 .footer_middle_wrap div {
     width: 20%;
-    max-height: 280px;
+    max-height: 300px;
     position: relative;
     text-align: start;
     align-items: center;
