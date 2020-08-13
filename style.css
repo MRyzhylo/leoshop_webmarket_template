@@ -474,7 +474,7 @@ button, button:active, button:focus {
     align-items: center;
 }
 
-.fb-page {
+.fb-page, .fb_iframe_widget {
     max-height: 150px;
 }
 
