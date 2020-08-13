@@ -475,7 +475,7 @@ button, button:active, button:focus {
 }
 
 .fb-page, .fb_iframe_widget {
-    max-height: 150px;
+    max-height: 120px;
 }
 
 .footer_middle_wrap h1 {
